@@ -1,12 +1,10 @@
-package dat21b.rename_me.dto;
+package dat21b.delivery.dto;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import dat21b.rename_me.entity.Delivery;
-import dat21b.rename_me.entity.ProductOrder;
+import dat21b.delivery.entity.Delivery;
+import dat21b.delivery.entity.ProductOrder;
 import lombok.*;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @Getter

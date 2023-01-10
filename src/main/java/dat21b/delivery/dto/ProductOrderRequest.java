@@ -1,9 +1,7 @@
-package dat21b.rename_me.dto;
+package dat21b.delivery.dto;
 
-import dat21b.rename_me.entity.Product;
-import dat21b.rename_me.entity.ProductOrder;
+import dat21b.delivery.entity.ProductOrder;
 import lombok.*;
-import org.springframework.stereotype.Service;
 
 @Getter
 @Setter

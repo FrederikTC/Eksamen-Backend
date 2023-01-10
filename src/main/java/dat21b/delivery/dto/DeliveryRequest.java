@@ -1,7 +1,7 @@
-package dat21b.rename_me.dto;
+package dat21b.delivery.dto;
 
-import dat21b.rename_me.entity.Delivery;
-import dat21b.rename_me.entity.ProductOrder;
+import dat21b.delivery.entity.Delivery;
+import dat21b.delivery.entity.ProductOrder;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,7 +19,7 @@ public class DeliveryRequest {
     String fromWarehouse;
     String destination;
 
-    public static Delivery getDeliveryEntity(DeliveryRequest dr){
+    public static Delivery getDeliveryEntity(DeliveryRequest dr) {
         return Delivery.builder()
                 .productOrder(dr.productOrders)
                 .deliveryDate(dr.deliveryDate)

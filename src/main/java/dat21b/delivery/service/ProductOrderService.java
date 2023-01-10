@@ -1,13 +1,10 @@
-package dat21b.rename_me.service;
+package dat21b.delivery.service;
 
-import dat21b.rename_me.dto.ProductOrderRequest;
-import dat21b.rename_me.dto.ProductOrderResponse;
-import dat21b.rename_me.dto.ProductRequest;
-import dat21b.rename_me.dto.ProductResponse;
-import dat21b.rename_me.entity.Product;
-import dat21b.rename_me.entity.ProductOrder;
-import dat21b.rename_me.repository.ProductOrderRepository;
-import dat21b.rename_me.repository.ProductRepository;
+import dat21b.delivery.dto.ProductOrderRequest;
+import dat21b.delivery.dto.ProductOrderResponse;
+import dat21b.delivery.entity.ProductOrder;
+import dat21b.delivery.repository.ProductOrderRepository;
+import dat21b.delivery.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,15 +20,6 @@ public class ProductOrderService {
         this.productOrderRepository = productOrderRepository;
     }
 
-    /*
-    public ProductOrderResponse productOrder(int productId, int quantity){
-
-        ProductOrder productOrder = new ProductOrder(productId,quantity);
-        ProductOrder order = productOrderRepository.save(productOrder);
-        return new ProductOrderResponse(order);
-    }
-
-     */
     public List<ProductOrderResponse> getProductOrders(){
         List<ProductOrder> productOrders = productOrderRepository.findAll();
         List<ProductOrderResponse> productResponses = productOrders.stream().map(pod-> new ProductOrderResponse(pod)).collect(Collectors.toList());

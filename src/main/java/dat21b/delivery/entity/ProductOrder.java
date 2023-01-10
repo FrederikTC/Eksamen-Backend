@@ -1,4 +1,4 @@
-package dat21b.rename_me.entity;
+package dat21b.delivery.entity;
 
 import lombok.*;
 

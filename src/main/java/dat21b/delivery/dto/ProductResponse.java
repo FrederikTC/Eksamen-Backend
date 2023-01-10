@@ -1,6 +1,6 @@
-package dat21b.rename_me.dto;
+package dat21b.delivery.dto;
 
-import dat21b.rename_me.entity.Product;
+import dat21b.delivery.entity.Product;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

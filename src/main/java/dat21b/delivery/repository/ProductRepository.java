@@ -1,7 +1,7 @@
-package dat21b.rename_me.repository;
+package dat21b.delivery.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import dat21b.rename_me.entity.Product;
+import dat21b.delivery.entity.Product;
 
 import java.util.List;
 

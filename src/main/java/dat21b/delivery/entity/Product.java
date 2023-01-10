@@ -1,10 +1,8 @@
-package dat21b.rename_me.entity;
+package dat21b.delivery.entity;
 
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Getter
 @Setter

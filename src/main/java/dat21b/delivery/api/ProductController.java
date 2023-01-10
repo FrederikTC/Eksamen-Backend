@@ -1,8 +1,8 @@
-package dat21b.rename_me.api;
+package dat21b.delivery.api;
 
-import dat21b.rename_me.dto.ProductRequest;
-import dat21b.rename_me.dto.ProductResponse;
-import dat21b.rename_me.service.ProductService;
+import dat21b.delivery.dto.ProductRequest;
+import dat21b.delivery.dto.ProductResponse;
+import dat21b.delivery.service.ProductService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,23 +23,22 @@ public class ProductController {
     }
 
     @GetMapping
-    public List<ProductResponse> getProducts(){
+    public List<ProductResponse> getProducts() {
         return productService.getProducts();
     }
 
     @GetMapping("/getProductByName")
-    public List<ProductResponse> getProductById(@RequestBody ProductRequest body){
+    public List<ProductResponse> getProductById(@RequestBody ProductRequest body) {
         return productService.getProductbyName(body);
     }
 
-
     @PutMapping("/{productId}")
-    public String editProduct(@RequestBody ProductRequest body, @PathVariable int productId){
-        return productService.editProduct(body,productId);
+    public String editProduct(@RequestBody ProductRequest body, @PathVariable int productId) {
+        return productService.editProduct(body, productId);
     }
 
     @DeleteMapping("/{productId}")
-    public String deleteProduct(@PathVariable int productId){
+    public String deleteProduct(@PathVariable int productId) {
         return productService.deleteProduct(productId);
     }
 

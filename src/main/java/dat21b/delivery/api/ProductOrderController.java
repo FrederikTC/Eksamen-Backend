@@ -1,12 +1,8 @@
-package dat21b.rename_me.api;
+package dat21b.delivery.api;
 
-
-import dat21b.rename_me.dto.ProductOrderRequest;
-import dat21b.rename_me.dto.ProductOrderResponse;
-import dat21b.rename_me.dto.ProductRequest;
-import dat21b.rename_me.dto.ProductResponse;
-import dat21b.rename_me.entity.ProductOrder;
-import dat21b.rename_me.service.ProductOrderService;
+import dat21b.delivery.dto.ProductOrderRequest;
+import dat21b.delivery.dto.ProductOrderResponse;
+import dat21b.delivery.service.ProductOrderService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,8 +23,9 @@ public class ProductOrderController {
         productOrderService.addProductOrder(body);
 
     }
+
     @GetMapping
-    public List<ProductOrderResponse> getProductOrders(){
+    public List<ProductOrderResponse> getProductOrders() {
         List<ProductOrderResponse> pod = productOrderService.getProductOrders();
         return pod;
     }

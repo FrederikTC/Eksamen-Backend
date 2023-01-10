@@ -1,7 +1,7 @@
-package dat21b.rename_me.dto;
+package dat21b.delivery.dto;
 
 
-import dat21b.rename_me.entity.ProductOrder;
+import dat21b.delivery.entity.ProductOrder;
 import lombok.*;
 
 @Getter
@@ -18,5 +18,6 @@ public class ProductOrderResponse {
         this.id = p.getId();
         this.productId = p.getProductId();
         this.quantity = p.getQuantity();
+
     }
 }

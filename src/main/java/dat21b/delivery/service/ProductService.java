@@ -1,10 +1,10 @@
-package dat21b.rename_me.service;
+package dat21b.delivery.service;
 
 
-import dat21b.rename_me.dto.ProductRequest;
-import dat21b.rename_me.dto.ProductResponse;
-import dat21b.rename_me.entity.Product;
-import dat21b.rename_me.repository.ProductRepository;
+import dat21b.delivery.dto.ProductRequest;
+import dat21b.delivery.dto.ProductResponse;
+import dat21b.delivery.entity.Product;
+import dat21b.delivery.repository.ProductRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;

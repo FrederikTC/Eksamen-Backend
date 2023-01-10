@@ -1,12 +1,8 @@
-package dat21b.rename_me.entity;
+package dat21b.delivery.entity;
 
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.stereotype.Service;
 
 import javax.persistence.*;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Getter
